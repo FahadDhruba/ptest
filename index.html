@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
+    <title>P Test</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="h-svh bg-slate-200">
 
-    
+    <button onclick="shower()" class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+<span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+Genarate
+</span>
+    </button>
     
 	<script>
 
@@ -34,6 +38,11 @@
 
     return randomNumber;
 }
+
+		function shower(){
+
+			document.getElementById('res').innerHTML = generateRandomNumber();
+		}
 
   </script>
   </body>
